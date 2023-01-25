@@ -1,0 +1,203 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/* img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+} */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Red Hat Display", sans-serif;
+  background: #fafafa;
+  padding-top: 80px;
+}
+
+/* TEXT ALIGN ONLY APPLIES TO BLOCK CONTAINERS */
+header {
+  text-align: center;
+}
+
+.section-hero {
+  padding: 120px 0 314px 0;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 88px;
+}
+
+.hero-middle {
+  max-width: 540px;
+  text-align: center;
+}
+
+.primary-heading {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 1;
+  color: #28283d;
+  margin-bottom: 2.125rem;
+}
+
+.description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #87879d;
+  margin-bottom: 2rem;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  align-items: center;
+}
+
+.btn {
+  font-size: 1rem;
+  font-weight: 900;
+  color: #ffffff;
+  display: inline-block;
+  padding: 16px 40px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 29px;
+}
+
+.btn--blue .btn-ver {
+  color: #8fe3f9;
+}
+
+.btn--blue {
+  background: #4d96a9;
+}
+
+.btn--purple {
+  background: #855fb1;
+}
+
+.hero-img-container {
+}
+
+.img-hero-left {
+  max-width: 100%;
+  transform: translate(-30px, -47px);
+}
+
+.img-hero-right {
+  max-width: 100%;
+  transform: translate(30px, 13px);
+}
+
+.section-features {
+  padding-bottom: 184px;
+}
+
+.container-gallery {
+  max-width: 69.375rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  margin-bottom: 5rem;
+}
+
+.img-gallery-container {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.img-gallery {
+  width: 100%;
+}
+
+.container-text {
+  max-width: 33.75rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.subheading {
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  color: #4d96a9;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.secondary-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #28283d;
+  margin-bottom: 2rem;
+}
+
+footer {
+  padding: 116px 0 104px 0;
+  /* height: 308px; */
+  display: flex;
+  align-items: center;
+  background: linear-gradient(
+      rgba(77, 151, 169, 0.88),
+      rgba(77, 151, 169, 0.88)
+    ),
+    url(../starter-code/assets/desktop/image-footer.jpg) no-repeat;
+  background-size: cover;
+}
+
+.footer-content {
+  max-width: 69.375rem;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.footer-heading {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  color: #fafafa;
+  margin-right: 125px;
+}
+
+.footer-description {
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: #fafafa;
+  margin-right: 92px;
+}
