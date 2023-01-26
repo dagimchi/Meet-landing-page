@@ -51,9 +51,9 @@ header {
 }
 
 .hero-content {
-  display: flex;
+  display: grid;
   justify-content: space-between;
-  gap: 88px;
+  grid-template-columns: auto auto auto;
 }
 
 .hero-middle {
@@ -108,8 +108,16 @@ header {
   background: #4d96a9;
 }
 
+.btn--blue:hover {
+  background: #71c0d4;
+}
+
 .btn--purple {
   background: #855fb1;
+}
+
+.btn--purple:hover {
+  background: #b18bdd;
 }
 
 .hero-img-container {
@@ -130,6 +138,8 @@ header {
 }
 
 .container-gallery {
+  position: relative;
+  padding: 0 39px;
   max-width: 69.375rem;
   margin: 0 auto;
   display: grid;
@@ -138,19 +148,18 @@ header {
   margin-bottom: 5rem;
 }
 
-.img-gallery-container {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
 .img-gallery {
+  border-radius: 8px;
   width: 100%;
 }
 
 .container-text {
   max-width: 33.75rem;
   margin: 0 auto;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* text-align: center; */
 }
 
 .subheading {
@@ -163,6 +172,8 @@ header {
 }
 
 .secondary-heading {
+  text-align: center;
+  max-width: 445px;
   font-size: 2.5rem;
   font-weight: 900;
   line-height: 1.1;
@@ -170,7 +181,12 @@ header {
   margin-bottom: 2rem;
 }
 
+.center {
+  text-align: center;
+}
+
 footer {
+  position: relative;
   padding: 116px 165px 104px 165px;
   background: linear-gradient(
       rgba(77, 151, 169, 0.88),
@@ -181,8 +197,6 @@ footer {
 }
 
 .footer-content {
-  /* max-width: 69.375rem;
-  margin: 0 auto; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -202,4 +216,38 @@ footer {
   font-weight: 500;
   line-height: 1.4;
   color: #fafafa;
+}
+
+.circle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  font-size: 1rem;
+  font-weight: 900;
+  color: #87879d;
+  background: #fafafa;
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+}
+
+.position {
+  transform: translate(-50%, -125px);
+}
+
+.position2 {
+  transform: translate(-50%, -50%);
+}
+
+.circle::after {
+  position: absolute;
+  right: 50%;
+  bottom: 100%;
+  content: "";
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  height: 84px;
 }
