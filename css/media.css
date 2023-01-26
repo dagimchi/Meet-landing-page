@@ -65,4 +65,24 @@
   .container-text {
     max-width: 35.8125rem;
   }
+
+  footer {
+    padding: 92px 50px 66px 50px;
+    background-position: center;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-heading {
+    max-width: 28.5625rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer-description {
+    max-width: 35.8125rem;
+    margin-bottom: 40px;
+  }
 }
