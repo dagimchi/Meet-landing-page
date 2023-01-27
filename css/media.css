@@ -16,6 +16,7 @@
   }
 }
 
+/* TABLET VIEW */
 @media (max-width: 63.6875em) {
   .hero-content {
     column-gap: 32px;
@@ -87,6 +88,7 @@
   }
 }
 
+/* MOBILE VIEW */
 @media (max-width: 41.0625em) {
   body {
     padding-top: 48px;

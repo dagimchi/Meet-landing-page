@@ -41,7 +41,6 @@ body {
   padding-top: 80px;
 }
 
-/* TEXT ALIGN ONLY APPLIES TO BLOCK CONTAINERS */
 header {
   text-align: center;
 }
@@ -120,9 +119,6 @@ header {
   background: #b18bdd;
 }
 
-.hero-img-container {
-}
-
 .img-hero-left {
   max-width: 100%;
   transform: translate(-30px, -47px);
@@ -159,7 +155,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* text-align: center; */
 }
 
 .subheading {
@@ -243,6 +238,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
+/* LINE ABOVE CIRCLE */
 .circle::after {
   position: absolute;
   right: 50%;
